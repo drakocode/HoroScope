@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HoroScope</title>
+	<link rel="stylesheet" type="text/css" href="./css/horoscope.css">
+	<script type="text/javascript" src="./js/horoscope.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<h1 class="txtheader">what your horoscope says about you</h1>
+		<div id="img_horo"></div>
+	</div>
+	<div id="selectionarea">
+		<p><h3 id="txt">Please select your zodiac sign</h3></p>
+
+		<select id="horoscope" name="zodiac" onchange="selffunction()">
+			<!-- 
+
+				SIGNS
+
+			 -->
+			<option  value="default">Please select</option>
+			<option value="Aries">Aries/Mesha (14/04 - 13/05)</option>
+			<option value="Taurus">Taurus/Vrishabha (14/05 - 13/06)</option>
+			<option value="Gemini">Gemini/Mithuna (14/06 - 14/07)</option>
+			<option value="Cancer">Cancer/Karkataka (15/07 - 15/08)</option>
+			<option value="Leo">Leo/Shimha (16/08 - 15/09)</option>
+			<option value="Virgo">Virgo/Kanya (16/09 - 15/10)</option>
+			<option value="Libra">Libra/Thula (16/10 - 14/11)</option>
+			<option value="Scorpio">Scorpio/Vrishkha (15/11 - 14/12)</option>
+			<option value="Sagittarius">Sagittarius/Dhanus (15/12 - 14/01)</option>
+			<option value="Capricor">Capricorn/Makara (15/01 - 12/02)</option>
+			<option value="Aquarius">Aquarius/Khumbha (13/02 - 12/03)</option>
+			<option value="Pisces">Pisces/Meena (13/03 - 13/04)</option>
+			
+			<option value="">---</option>
+			<!-- 
+
+				PLANETS
+
+			 -->
+			 <option value="Sun">O Sol (Surya ou Ravi)</option>
+			 <option value="Moon">A Lua (Chandra ou Soma)</option>
+			 <option value="Mercury">Mercúrio (Buddha)</option>
+			 <option value="Venus">Vênus (Shukra)</option>
+			 <option value="Mars">Marte (Mangala ou Kuja)</option>
+			 <option value="Jupiter">Júpiter (Brihaspati ou Guru)</option>
+			 <option value="Saturn">Saturno (Shani)</option>
+			 <option value="Uranus">Urano (Brahma)</option>
+			 <option value="Neptune">Netuno (Varuna)</option>
+			 <option value="Pluto">Plutão (Yama)</option>
+
+			 <option value="">---</option>
+			<!-- 
+
+				ELEMENTS
+
+			 -->
+			<option value="Fire">Fire element</option>
+			<option value="Water">Water element</option>
+			<option value="Earth">Earth element</option>
+			<option value="Air">Air element</option>
+		</select>
+		<input  type="button" value="Restart" name="" onclick="window.location.reload()" id="restartbtn" style="visibility: hidden;">
+	 </div>
+	 <br>
+	 <div id="horoscopetxt">
+	 	<h3 id="textrow1"></h3>
+	 	<textarea id="textrow2" style="margin:0px;width: 1208px; height: 366px;"  disabled></textarea>
+	 </div>
+	 <br>
+</div>
+</body>
+</html>
