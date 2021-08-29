@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Door</title>
+
+    <!-- favicon -->
+    <link href="./img/favicon.png" rel="shortcut icon" />
+
     <style>
-        body
-        {
-            background:black; 
+        body {
+            background: black;
         }
-        #img
-        {
+        
+        #img {
             position: absolute;
-            top:20%;
-            left:33%;
-            transform: translate(0%,0%);
+            top: 20%;
+            left: 33%;
+            transform: translate(0%, 0%);
             animation: nm 10s infinite;
-            
         }
-        @keyframes nm{
-        from{
-            transform: rotate(0deg);
+        
+        @keyframes nm {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
         }
-        to{
-            transform: rotate(360deg);
-           }
-        }
-        .txt{
+        
+        .txt {
             font-size: 50px;
             font-family: Arial Rounded MT;
-            top:0%;
-            left:35%;
-            transform: translate(33%,50%);
+            top: 0%;
+            left: 35%;
+            transform: translate(33%, 50%);
             animation: color 1s infinite;
-    
         }
+        
         @keyframes color {
-              0%   {color: red;}
-              25%  {color: yellow;}
-              50%  {color: blue;}
-              100% {color: green;}
+            0% {
+                color: red;
+            }
+            25% {
+                color: yellow;
+            }
+            50% {
+                color: blue;
+            }
+            100% {
+                color: green;
+            }
         }
-        </style>
+    </style>
 </head>
+
 <body>
     <h1 class="txt">Astrology Horoscope</h1>
-    <div id="img"><a href="./horoscope.html"><img src="./img/hs.png"></a></div>
+    <div id="img">
+        <a href="./horoscope.html"><img src="./img/hs.png"></a>
+    </div>
 </body>
+
 </html>

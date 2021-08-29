@@ -1,0 +1,377 @@
+/* *{
+     margin: 0;
+     padding: 0;
+}
+.header{
+    height: 100vh;
+}
+.navbar-style{
+    box-shadow: 0 5px 10px #efefef;
+    text-transform: uppercase;
+}
+.logo{
+    height: 48px;
+    padding: 20px 10px; 
+}
+.icon-bar{
+    background-color: darkorange;
+}
+li a{
+    color: #333;
+}
+.big-text{
+    font-size: 52px;
+    margin: 20px 0;
+    color: darkorange;
+}
+a.btn{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}a.btn-first{
+    background-color: darkorange;
+    color: #fff;
+}
+a.btn-second{
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #333;
+}
+
+a.btn:hover{
+    background: darkorange;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+.banner-info, .banner-image{
+    margin: 30px 0;
+} */
+
+
+/*-- Body Reset --*/
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #616971;
+}
+
+
+/*============= TOP BAR HEADER =============*/
+
+.top-bar {
+    background: rgb(107, 61, 151);
+    height: 2.8rem;
+    padding: .5rem 0;
+}
+
+.top-bar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem reba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.nav-item {
+    padding: .5rem;
+}
+
+.nav-link {
+    color: #000000!important;
+}
+
+.nav-link.active,
+nav-link:hover {
+    color: rgb(132, 0, 255)!important;
+}
+
+.navbar-toggler {
+    border-color: rgb(132, 0, 255)!important;
+    border-width: 3px;
+    background-color: black;
+}
+
+.navbar-toggler-icon {
+    color: black;
+    background-color: black;
+}
+
+
+/*============= CAROUSEL =============*/
+
+#carousel {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.carousel-inner {
+    max-height: 38rem!important;
+}
+
+
+/*---Change Carousel Transition Speed --*/
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active {
+    transition: transform 1.2s ease;
+}
+
+
+/*-- Carousel Content --*/
+
+.carousel-caption {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+
+.carousel-caption h3 {
+    font-size: 2.2rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+}
+
+.border-primary {
+    border-top: .2rem solid rgb(132, 0, 255)!important;
+}
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+}
+
+.btn-lg {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+}
+
+.btn-danger {
+    background-color: red;
+    border: .05rem solid rgb(146, 27, 27);
+}
+
+.btn-primary {
+    background-color: rgb(174, 0, 255);
+    border: .05rem solid rgb(94, 22, 128);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: rgb(94, 22, 128)!important;
+    border: .05rem solid rgb(174, 0, 255)!important;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: rgb(146, 27, 27)!important;
+    border: .05rem solid red!important;
+}
+
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed {
+    background-color: #000000;
+    position: fixed;
+}
+
+.fixed-background {
+    padding: 10rem 0;
+}
+
+.fixed-background {
+    overflow: hidden;
+    /*-- Correction for iOS --*/
+}
+
+
+/*======== HOROSCOPE TEXT  ===============*/
+
+textarea {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    /* color: #000000!important; */
+}
+
+
+/* result{} */
+
+
+/*-- Emoji Navbar --*/
+
+.emoji {
+    background-image: linear-gradient(to right, rgb(174, 0, 255), red);
+    min-height: 0!important;
+    padding: .4rem 0!important;
+}
+
+.emoji .svg-inline--fa {
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+}
+
+
+/*============= FOOTER =============*/
+
+footer {
+    background-color: #383838;
+    padding: 1rem 2rem 3rem;
+}
+
+footer img {
+    height: 3.5rem;
+    margin: 1.5rem auto;
+}
+
+footer p,
+footer a,
+.socket a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0auto;
+}
+
+ul.social li {
+    margin: 0 auto;
+}
+
+footer .svg-inline--fa {
+    font-size: 2.3rem;
+}
+
+footer .svg-inline--fa:hover {
+    color: rgb(212, 119, 255);
+}
+
+
+/*============= SOCKET =============*/
+
+.socket {
+    background-color: #222222;
+    border-top: .1rem solid #000000;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+
+/* Devices under 1199px (xl) */
+
+@media (max-width: 1199.98px) {
+    .carousel-caption h1 {
+        font-size: 2.8rem;
+    }
+    .carousel-caption h3 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Devices under 992px (ld) */
+
+@media (max-width: 991.98px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+    .btn-lg {
+        font-size: .95rem;
+    }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+  
+  Extra small (xs) devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+  
+  Small (sm) devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+  
+  Medium (md) devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+  
+  Large (lg) devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  Extra (xl) large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  
+  =============*/
+
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+
+.row,
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+/*-- Fixed Background Image --*/
+
+.fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed {
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
