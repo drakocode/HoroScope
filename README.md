@@ -7,5 +7,3 @@ Codigo usado como base:
  Link 1: https://drive.google.com/drive/folders/1DOomqJrbbPDD8DooTxCt2QZzo9Y7gbri
  <br>
  Link 2: https://drive.google.com/drive/folders/1-2DG-GW0iBNxjWKY_vYMaMBOpuagjvHY
- <br>
- Video 2: https://www.youtube.com/watch?v=TJF4ldO91n4&t=6045s

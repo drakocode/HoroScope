@@ -1,6 +1,9 @@
-// import {signsList} from '../modules/signs'
+// import {signsInfo} from './modules/signs'
 // import {planetsList} from '../modules/plantes'
 // import {elementsList} from '../modules/elements'
+
+// const horoReq = require ('./modules/signs')
+// var horo =JSON.parse(horoReq)
 
 function selffunction() {
     "use strict";
@@ -10,10 +13,10 @@ function selffunction() {
         result;
 
 
-    textrowa = "Here is your Horoscope: ";
-    document.getElementById("textrow1").innerHTML = textrowa;
-    var hs = document.getElementById("horoscope").value;
-    // var horo = signsList;
+    // textrowa = "Here is your Horoscope: ";
+    // document.getElementById("textrow1").innerHTML = textrowa;
+    var hs = document.getElementById("horoscope");
+    // var horo = signsInfo;
     // var planet = planetsList;
     // var element = elementsList;
 
@@ -80,9 +83,8 @@ function selffunction() {
         // 
         "Element: Water\nQuality: Mutable\nColor: Mauve, Lilac, Purple, Violet, Sea green\nDay: Thursday\nRuler: Neptune, Jupiter\nGreatest Overall Compatibility: Virgo, Taurus\nLucky Numbers: 3, 9, 12, 15, 18, 24\nDate range: February 19 - March 20\n\n\nStrengths: Compassionate, artistic, intuitive, gentle, wise, musical\nWeaknesses: Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr\nPisces likes: Being alone, sleeping, music, romance, visual media, swimming, spiritual themes\nPisces dislikes: Know-it-all, being criticized, the past coming back to haunt, cruelty of any kind."
 
-
-
     ];
+
     var planet = [
         // 
         // SOL
@@ -158,196 +160,253 @@ function selffunction() {
 
     ];
 
-    var src = ["./img/Aries.png", "./img/Taurus.png", "./img/Gemini.png", "./img/Cancer.png", "./img/Leo.png", "./img/Virgo.png", "./img/Libra.png", "./img/Scorpio.png", "./img/Sagittarius.png", "./img/Capricor.png", "./img/Aquarius.png", "./img/Pisces.png", "./img/hs.png", "./img/Sun.png", "./img/Moon.png", "./img/Mercury.png", "./img/Venus.png", "./img/Mars.png", "./img/Jupiter.png", "./img/Saturn.png", "./img/Uranus.png", "./img/Neptune.png", "./img/Pluto.png", "./img/Fire.png", "./img/Water.png", "./img/Earth.png", "./img/Air.png"];
+    var srcHoro = ["../img/signs/Aries.png", "../img/signs/Taurus.png", "../img/signs/Gemini.png", "../img/signs/Cancer.png", "../img/signs/Leo.png", "../img/signs/Virgo.png", "../img/signs/Libra.png", "../img/signs/Scorpio.png", "../img/signs/Sagittarius.png", "../img/signs/Capricor.png", "../img/signs/Aquarius.png", "../img/signs/Pisces.png", "./img/hs.png"];
+    var srcPlanet = ["../img/planets/Sun.png", "../img/planets/Moon.png", "../img/planets/Mercury.png", "../img/planets/Venus.png", "../img/planets/Mars.png", "../img/planets/Jupiter.png", "../img/planets/Saturn.png", "../img/planets/Uranus.png", "../img/planets/Neptune.png", "../img/planets/Pluto.png"]
+    var srcElement = ["../img/elements/Fire.png", "../img/elements/Water.png", "../img/elements/Earth.png", "../img/elements/Air.png"]
 
 
 
-    // 
-    // SIGNS
-    // 
-    if (hs == "Aries") {
 
-        var re = horo[0];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[0];
-        document.getElementById('img_horo').appendChild(img);
 
-    } else if (hs == "Taurus") {
-        var re = horo[1];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[1];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Gemini") {
-        var re = horo[2];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[2];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Cancer") {
-        var re = horo[3];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[3];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Leo") {
-        var re = horo[4];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[4];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Virgo") {
-        var re = horo[5];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[5];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Libra") {
-        var re = horo[6];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[6];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Scorpio") {
-        var re = horo[7];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[7];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Sagittarius") {
-        var re = horo[8];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[8];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Capricor") {
-        var re = horo[9];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[9];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Aquarius") {
-        var re = horo[10];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[10];
-        document.getElementById('img_horo').appendChild(img);
-    } else if (hs == "Pisces") {
-        var re = horo[11];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[11];
-        document.getElementById('img_horo').appendChild(img);
+
+
+
+
+
+
+    // var texto = document.getElementById(`textAbout`).innerHTML;
+    // var selectPosition = document.getElementById(`horoscope`).value;
+
+    // let title = horoReq.title;
+    // let element = horoReq.element;
+    // let quality = horoReq.quality;
+    // let color = horoReq.color;
+
+    switch (hs.value) {
+
+        case 'Aries':
+            
+            var re = horo[0];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[0];
+            document.getElementById('imgContainer').appendChild(img);
+            // let name= horo[0].name;
+            // let quality=horo[0].quality;
+            // let color=horo[0].color;
+            // let ruler=horo[0].ruler;
+
+            // document.getElementById('contentContainer').innerHTML += `<h1>${name}</h1>`;
+            // document.getElementById('contentContainer').innerHTML += `<p>${quality}</p>`;
+            // document.getElementById('contentContainer').innerHTML += `<p>${color}</p>`;
+            // document.getElementById('contentContainer').innerHTML += `<p>${ruler}</p>`;
+
+            
+            break;
+        case 'Taurus':
+            var re = horo[1];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[1];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Gemini':
+            var re = horo[2];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[2];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Cancer':
+            var re = horo[3];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[3];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Leo':
+            var re = horo[4];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[4];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Virgo':
+            var re = horo[5];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[5];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Libra':
+            var re = horo[6];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[6];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Scorpio':
+            var re = horo[7];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[7];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Sagittarius':
+            var re = horo[8];
+            result = re;
+            if (document.querySelector('imgContainer') != img) {
+                var img = document.createElement('img');
+                img.setAttribute('id', 'imgHoro')
+                img.src = srcHoro[8];
+                document.getElementById('imgContainer').appendChild(img);
+                break;
+            } else {
+                document.getElementById('imgHoro')
+                img.src = srcHoro[8]
+            }
+            break;
+        case 'Capricorn':
+            var re = horo[9];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[9];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Aquarius':
+            var re = horo[10];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[10];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        case 'Pisces':
+            var re = horo[11];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcHoro[11];
+            document.getElementById('imgContainer').appendChild(img);
+            break;
+        default:
+        // select.value=value.default;
     }
 
-    // 
-    // PLANETS
-    // 
-    else if (hs == "Sun") {
-        var re = planet[0];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[13];
-        document.getElementById('img_horo').appendChild(img);
 
-    } else if (hs == "Moon") {
-        var re = planet[1];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[14];
-        document.getElementById('img_horo').appendChild(img);
+    // planets switch
+    switch(hs.value){
+        case"Sun":
+            var re = planet[0];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[13];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Mercury") {
-        var re = planet[2];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[15];
-        document.getElementById('img_horo').appendChild(img);
+        break;
+        case"Moon":
+            var re = planet[1];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[14];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Venus") {
-        var re = planet[3];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[16];
-        document.getElementById('img_horo').appendChild(img);
+        break;
+        case"Mercury":
+            var re = planet[2];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[15];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Mars") {
-        var re = planet[4];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[17];
-        document.getElementById('img_horo').appendChild(img);
+        break;
+        case"Venus":
+            var re = planet[3];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[16];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Jupiter") {
-        var re = planet[5];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[18];
-        document.getElementById('img_horo').appendChild(img);
+        break;
+        case"Mars":
+            var re = planet[4];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[17];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Saturn") {
-        var re = planet[6];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[19];
-        document.getElementById('img_horo').appendChild(img);
+        break;
+        case"Jupiter":
+            var re = planet[5];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[18];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Uranus") {
-        var re = planet[7];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[20];
-        document.getElementById('img_horo').appendChild(img);
+        break; 
+        case"Saturn":
+            var re = planet[6];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[19];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Neptune") {
-        var re = planet[8];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[21];
-        document.getElementById('img_horo').appendChild(img);
+        break; 
+        case"Uranus":
+            var re = planet[7];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[20];
+            document.getElementById('imgContainer').appendChild(img);
 
-    } else if (hs == "Pluto") {
-        var re = planet[9];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[22];
-        document.getElementById('img_horo').appendChild(img);
+        break;
+        case"Neptune":
+            var re = planet[8];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[21];
+            document.getElementById('imgContainer').appendChild(img);
 
-    }
-
-    // 
-    // ELEMENTS
-    // 
-    else if (hs == "Fire") {
-        var re = element[0];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[23];
-        document.getElementById('img_horo').appendChild(img);
-
-    } else if (hs == "Water") {
-        var re = element[1];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[24];
-        document.getElementById('img_horo').appendChild(img);
-
-    } else if (hs == "Earth") {
-        var re = element[2];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[24];
-        document.getElementById('img_horo').appendChild(img);
-
-    } else if (hs == "Air") {
-        var re = element[3];
-        result = re;
-        var img = document.createElement('img');
-        img.src = src[25];
-        document.getElementById('img_horo').appendChild(img);
+        break;
+        case"Pluto":
+            var re = planet[9];
+            result = re;
+            var img = document.createElement('img');
+            img.src = srcPlanet[22];
+            document.getElementById('imgContainer').appendChild(img);
 
     }
+
+
+    // elements switch
+    switch(hs.value){
+            case "Fire":
+            var re = element[0];
+            result = re;
+            var img = document.createElement('img');
+            img.src = src[23];
+            document.getElementById('imgContainer').appendChild(img);
+
+         case "Water":
+            var re = element[1];
+            result = re;
+            var img = document.createElement('img');
+            img.src = src[24];
+            document.getElementById('imgContainer').appendChild(img);
+
+         case "Earth":
+            var re = element[2];
+            result = re;
+            var img = document.createElement('img');
+            img.src = src[24];
+            document.getElementById('imgContainer').appendChild(img);
+
+         case "Air":
+            var re = element[3];
+            result = re;
+            var img = document.createElement('img');
+            img.src = src[25];
+            document.getElementById('imgContainer').appendChild(img);
+    }
+
 
     document.getElementById("textrow2").innerHTML = result;
     document.getElementById("restartbtn").style.visibility = "visible";

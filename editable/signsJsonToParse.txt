@@ -1,0 +1,1 @@
+https://www.phpinterviewquestions.co.in/php-array-to-json.php
